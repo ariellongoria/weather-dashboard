@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: rgb(165, 165, 165);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 31, 31);
+    color: rgb(208, 147, 68);
+}
+
+section {
+    display: flex;
+}
+
+#left-column {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search-history {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#current-weather {
+    background-color: ivory;
+    padding: 5px;
+}
+
+#forecast-weather {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.weather-card {
+    background-color: rgb(50, 50, 100);
+    color: ivory;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-card h3 {
+    align-self: center;
+}
+
+.weather-card img {
+    align-self: center;
+}
+
+label {
+    font-size: 21px;
+    text-align: center;
+}
+
+input {
+    margin: 5px 10px;
+    height: 50px;
+    width: 80%;
+}
+
+button {
+    border: none;
+    margin: 5px 10px;
+    width: 80%;
+}
+button:focus {
+    border: none;
+    outline: none;
+}
+
+#current-weather h2 {
+    display: flex;
+    align-items: center;
+}
+
+#current-weather img {
+    height: 50px;
+    width: 50px;
+}

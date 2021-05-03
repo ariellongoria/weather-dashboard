@@ -4,25 +4,28 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Weather Dashboard</title>
     </head>
     <body>
         <header>
             <h1>Weather Dashboard</h1>
         </header>
+        <section>
+            <div id="left-column">
+                <form id="search-form">
+                    <label for="search-input">Search City</label>
+                    <input type="text" placeholder="Austin" id="search-input" />
+                    <button type="submit" id="searchBtn">Search</button>
+                </form>
+                <div id="search-history"></div>
+            </div>
 
-        <div id="left-column">
-            <form id="search-form">
-                <input type="text" placeholder="Austin" id="search-input" />
-                <button type="submit" id="searchBtn">Search</button>
-            </form>
-            <div id="search-history"></div>
-        </div>
-
-        <main>
-            <div id="current-weather"></div>
-            <div id="forecast-weather"></div>
-        </main>
+            <main>
+                <div id="current-weather"></div>
+                <div id="forecast-weather"></div>
+            </main>
+        </section>
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
